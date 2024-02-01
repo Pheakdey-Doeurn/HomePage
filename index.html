@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <!--=============== BOOSTRAP ===============-->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+         crossorigin="anonymous">
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>HomePage</title>
+      <link rel="icon" href="assets/img/logo.png">
+
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+               <span>ពុទ្ធិកអនុវិទ្យាល័យថ្មគោល</span>
+               <!-- <img src="assets/img/school.jpg" alt="ពុទ្ធិកអនុវិទ្យាល័យថ្មគោល"> -->
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">ទំព័រដើម</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">ទំនាក់ទំនង</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">អំពីយើង</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">បរិច្ចាគ</a>
+                  </li>
+
+                  <!-- <li class="nav__item">
+                     <a href="#" class="nav__link">Contact Me</a>
+                  </li> -->
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <div class="nav__actions">
+               <!-- Search button -->
+               <!-- <i class="ri-search-line nav__search" id="search-btn"></i> -->
+
+               <!-- Login button -->
+               <i class="ri-user-line nav__login" id="login-btn"></i>
+
+               <!-- Toggle button -->
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-menu-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== SEARCH ====================-->
+      <!-- <div class="search" id="search">
+         <form action="" class="search__form">
+            <i class="ri-search-line search__icon"></i>
+            <input type="search" placeholder="What are you looking for?" class="search__input">
+         </form>
+
+         <i class="ri-close-line search__close" id="search-close"></i>
+      </div> -->
+
+      <!--==================== LOGIN ====================-->
+      <div class="login" id="login">
+         <form action class="login__form">
+            <h2 class="login__title">Log In</h2>
+
+            <div class="login__group">
+               <div>
+                  <label for="email" class="login__label">Email</label>
+                  <input type="email" placeholder="Write your email" id="email"
+                     class="login__input">
+               </div>
+
+               <div>
+                  <label for="password" class="login__label">Password</label>
+                  <input type="password" placeholder="Enter your password"
+                     id="password" class="login__input">
+               </div>
+            </div>
+
+            <div>
+               <!-- <p class="login__signup">
+                  You do not have an account? <a href="#">Sign up</a>
+               </p>
+   
+               <a href="#" class="login__forgot">
+                  You forgot your password
+               </a> -->
+
+               <button type="submit" class="login__button">Log In</button>
+            </div>
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== SLIDER ====================-->
+      <div class="slider">
+         <div class="list">
+            <div class="item">
+               <img src="./assets/img/1.jpg" alt>
+            </div>
+            <div class="item">
+               <img src="./assets/img/2.jpg" alt>
+            </div>
+            <div class="item">
+               <img src="./assets/img/3.jpg" alt>
+            </div>
+         </div>
+         <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+         </div>
+         <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+
+      <!--==================== About ====================-->
+      <div class="container" id="about">
+         <h2 class="text-center mt-4 section-title">អំពីយើង</h2>
+         <div class="d-flex justify-content-center align-item-center">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+         </div>
+
+         <div class="row md-4 align-items-center">
+            <div class="col-lg-6">
+               <h3>ប្រវត្ដិសាលាពុទ្ធិក</h3>
+               <h4 class="mt-4 subTitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  ex vel nihil officia inventore laboriosam omnis, iure
+                  architecto totam impedit veritatis tempore, est dolores hic
+                  molestias ducimus nemo nobis nam!
+                  <br>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum provident saepe repudiandae dolorum. Nisi suscipit
+                  aut harum, neque asperiores quidem sit similique molestiae
+                  enim cumque voluptates, incidunt accusamus ut repudiandae.
+               </h4>
+            </div>
+            <div class="col-lg-6 about-right">
+               <img src="assets/img/tkbss.jpg" alt="ពុទ្ធិកអនុវិទ្យាល័យថ្មគោល">
+            </div>
+         </div>
+
+         <!-- ==== Card រចនាសម្ព័ន្ធសាលា ===== -->
+         <div class="mt-4">
+            <h5 class="title-center">រចនាសម្ព័ន្ធសាលា</h5>
+            <div class="row align-items-center">
+               <div class="col-4">
+                  <div class="card">
+                     <img src="assets/img/Kimeng.jpg" alt="A photo leader teams"
+                        class="card-img-top">
+                     <div class="card-body">
+                        <h5 class="card-title">មេក្រុម</h5>
+                        <p class="card-text">ធ្វើការងារម្ដងៗ មិនចេះឆ្ងល់​
+                           ដល់សួរធ្វើឡេឡឺ</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4">
+                  <div class="card">
+                     <img src="assets/img/saven.jpg" alt="A photo teams"
+                        class="card-img-top">
+                     <div class="card-body">
+                        <h5 class="card-title">កូនអុក</h5>
+                        <p class="card-text">ធ្វើការងារម្ដងណា
+                           មិនដែលធ្វើចេញគំនិតខ្លួនឯងទេ​
+                           ដល់គេប្រាប់អស់ មនុស្សអើយមនុស្ស</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4">
+                  <div class="card">
+                     <img src="assets/img/brotra.jpg" alt="A photo teams"
+                        class="card-img-top">
+                     <div class="card-body">
+                        <h5 class="card-title">កូនក្រុម</h5>
+                        <p class="card-text">រកកណាមែនគុណ</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row align-items-center">
+            <div class="col-4">
+               <div class="card">
+                  <img src="assets/img/ratana.jpg" alt="A photo leader teams"
+                     class="card-img-top">
+                  <div class="card-body">
+                     <h5 class="card-title">កូនក្រុម</h5>
+                     <p class="card-text">ទើបជក់ហើយប្រូ</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="assets/img/Dpheak.jpg" alt="A photo teams"
+                     class="card-img-top">
+                  <div class="card-body">
+                     <h5 class="card-title">កូនក្រុម</h5>
+                     <p class="card-text">ធ្វើការងារម្ដងណា
+                        មិនដែលធ្វើចេញគំនិតខ្លួនឯងទេ​
+                        ដល់គេប្រាប់អស់</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-4">
+               <div class="card">
+                  <img src="assets/img/sophorn.jpg" alt="A photo teams"
+                     class="card-img-top">
+                  <div class="card-body">
+                     <h5 class="card-title">កូនក្រុម</h5>
+                     <p class="card-text">ជាប់ធើការ </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="text-center mt-4">
+            <h5 class="row text-bg-dark">
+               ក្រុមអភិវឌ្ឍន៍
+            </h5>
+
+            <div class="slide-container swiper">
+               <div class="slide-container">
+                  <div class="card-wrapper swiper-wrapper">
+                     <div class="card swiper-slide">
+                        <div class="image-content">
+                           <span class="overlay"></span>
+                           <div class="card-image">
+                              <img src="assets/img/brotra.jpg" alt
+                                 class="card-img">
+                           </div>
+                        </div>
+                        <div class="card-content">
+                           <h2 class="name">CH.SOPHEAKTRA</h2>
+                           <p class="description">I'm a student.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
+
+            </div>
+         </div>
+      </div>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
