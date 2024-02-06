@@ -550,7 +550,7 @@ img {
 @media screen and (max-width: 768px) {
   .content-section{
     flex-direction: column;
-    width: 100%;
+    width: calc(100% / 2 - 10px);
   }
 }
 @media screen and (max-width: 600px){
@@ -682,7 +682,7 @@ img {
   height: 15px;
   width: 15px;
   border-radius: 20px;
-  background: #fff;
+  background: #e49292;
   margin: 0 4px;
   cursor: pointer;
   transition: all 0.5s ease;
