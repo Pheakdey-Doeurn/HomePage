@@ -537,6 +537,11 @@ img {
   padding: 0px 10px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+  .content-section{
+    flex-direction: column;
+  }
+}
 
 .card {
   border-radius: 25px;
