@@ -544,12 +544,21 @@ img {
   padding: 0px 10px;
   margin-bottom: 10px;
 }
+.content-section .card:hover{
+  transform: translateY(-15px);
+}
 @media screen and (max-width: 768px) {
   .content-section{
     flex-direction: column;
-  }
-  .card{
     width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250%;
   }
 }
 
@@ -704,10 +713,8 @@ input[type="radio"]{
 }
 @media (max-width: 600px) {
   .main-card .cards .card{
-    /* margin: 20px 0 10px 0; */
     width: 100%;
   }
 }
-
 
 /* == End Team Dev == */
