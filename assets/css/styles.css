@@ -511,6 +511,33 @@ img {
 .slide-content {
   margin: 0 40px;
 }
+.content-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-section .card{
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.content-section .card img{
+  width: 100%;
+  height: auto;
+}
+.content-section .card h5{
+  margin: 15px 0px;
+  font-size: 22px;
+  color: #e73b69;
+}
+.content-section .card p{
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+
 .card {
   border-radius: 25px;
   background-color: #fff;
