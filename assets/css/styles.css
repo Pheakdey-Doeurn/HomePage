@@ -503,7 +503,7 @@ img {
 }
 /* End About */
 
-/* == Team Dev == */
+/* === Card រចនាសម្ព័ន្ធសាលា === */
 .slide-content {
   margin: 0 40px;
 }
@@ -533,9 +533,17 @@ img {
   padding: 0px 10px;
   margin-bottom: 10px;
 }
+.content-section .card:hover{
+  transform: translateY(-15px);
+}
 @media screen and (max-width: 768px) {
   .content-section {
     flex-direction: column;
+  }
+  .content-section .card{
+    max-width: 1350px;
+    width: 150%; 
+    justify-content: center;   
   }
 }
 
@@ -557,7 +565,6 @@ img {
   border-radius: 50%;
   background: #fff;
   padding: 3px;
-  /* justify-content: center; */
 }
 .card-image .card-img {
   height: 100%;
@@ -566,7 +573,9 @@ img {
   border-radius: 50%;
   border: 4px solid #fa5757;
 }
+/* === End Card រចនាសម្ព័ន្ធសាលា === */
 
+/* == Team Dev == */
 .dev-body{
   display: flex;
   align-items: center;
@@ -715,7 +724,6 @@ input[type="radio"]{
 }
 @media (max-width: 600px) {
   .main-card .cards .card{
-    /* margin: 20px 0 10px 0; */
     width: 100%;
   }
 }
