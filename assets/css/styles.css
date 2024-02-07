@@ -70,7 +70,7 @@ button {
 
 ul {
   list-style: none;
-  margin-top: 20px;
+  margin-top: 23px;
 }
 
 a {
@@ -208,7 +208,6 @@ img {
 
 .nav__link {
   color: var(--title-color);
-  /* font-weight: var(--font-semi-bold); */
   font-size: 1.25rem;
   transition: color 0.5s;
 }
@@ -411,7 +410,7 @@ img {
 .slider {
   width: 1400px;
   max-width: 110vw;
-  height: 700px;
+  height: 850px;
   margin: auto;
   position: relative;
   overflow: hidden;
