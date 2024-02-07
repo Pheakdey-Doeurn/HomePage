@@ -752,5 +752,16 @@ input[type="radio"]{
   margin-bottom: 10px;
 }
 /* === End Contact us === */
- 
+
+.bottom-details{
+  width: 100%;
+ }
+.bottom-details .bottom-text{
+  
+  margin: auto;
+  padding: 20px 40px;
+  
+  justify-content: space-between;
+ }
+
  /* === Start Footer === */
