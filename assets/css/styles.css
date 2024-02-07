@@ -8,7 +8,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(9, 84%, 57%);
+  --first-color: hsl(230, 75%, 56%);
   --title-color: hsl(230, 75%, 15%);
   --text-color: hsl(230, 12%, 40%);
   --body-color: hsl(230, 100%, 98%);
@@ -406,7 +406,6 @@ img {
     margin-inline: auto;
   }
 }
-
 /* === Slide === */
 .slider {
   width: 1400px;
@@ -488,9 +487,7 @@ img {
   color: #000;
   font-weight: var(--font-medium);
 }
-/* ======= End Slide Home Page ========= */
-
-/*==== About =====*/
+/* About */
 .section-title {
   color: brown;
 }
@@ -504,216 +501,100 @@ img {
 .about-right:hover img {
   transform: rotate(8deg) scale(1.1);
 }
+/* End About */
 
-/* ==== Card រចនាសម្ព័ន្អសាលា ==== */
+/* == Team Dev == */
+.h5 {
+  justify-content: center;
+}
+.slide-content {
+  margin: 0 40px;
+}
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content-section .card {
+  flex: 1;
+  margin: 20px 20px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+.content-section .card img {
+  width: 100%;
+  height: auto;
+}
+.content-section .card h5 {
+  margin: 15px 0px;
+  font-size: 22px;
+  color: #e73b69;
+}
+.content-section .card p {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+}
+
 .card {
   border-radius: 25px;
   background-color: #fff;
 }
-.card-img {
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  /* justify-content: center; */
+}
+.card-image .card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid #fa5757;
 }
-.content-section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* Contact us */
+.contact-us {
+  padding: 70px 0px;
 }
-.content-section .card{
-  flex: 1;
-  margin: 20px 20px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+.section-title h2 {
+  font-size: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  display: inline-block;
 }
-.content-section .card img{
-  width: 100%;
-  height: auto;
+
+.contact-us textarea {
+  min-height: 188px;
+  max-width: 100%;
 }
-.content-section .card h5{
-  margin: 15px 0px;
-  font-size: 22px;
-  color: #e73b69;
+.contact-us .map {
+  overflow: hidden;
+  border-radius: 4px;
 }
-.content-section .card p{
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 0px 10px;
+.btn {
+  margin-top: 10px;
+}
+.txtname {
   margin-bottom: 10px;
 }
-.content-section .card:hover{
-  transform: translateY(-15px);
+.txtmessage {
+  margin-bottom: 10px;
 }
-@media screen and (max-width: 768px) {
-  .content-section{
-    flex-direction: column;
-    width: calc(100% / 2 - 10px);
-  }
-}
-@media screen and (max-width: 600px){
-  .card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250%;
-  }
-}
-
-/* === End About ==== */
-
-/* == Team Dev == */
-.body-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f2f2f2;
-  position: relative;
-}
-.body-container::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  background: #FF676D;
-  clip-path: inset(47% 0 0 0);
-  z-index: -1;
-  height: 100%;
-}
-::selection{
-  background:    #FF676D;
-  color: #fff;
-}
-.container-body{
-  max-width: 950px;
-  width: 100%;
-  overflow: hidden;
-  padding: 80px 0;
-}
-.container-body .main-card{
-  display: flex;
-  justify-content: space-evenly;
-  width: 200%;
-  transition: 1s;
-}
-#two:checked ~ .main-card{
-  margin-left: -100%;
-}
-.container-body .main-card .cards{
-  width: calc(100% / 2 - 10px);
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 20px;
-  justify-content: space-between;
-}
-.main-card .cards .card{
-  width: calc(100% / 3 - 10px);
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  transition: all 0.4s ease;
-}
-.main-card .cards .card:hover{
-  transform: translateY(-15px);
-}
-.cards .card .content{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.cards .card .content .img{
-  height: 130px;
-  width: 130px;
-  border-radius: 50%;
-  padding: 3px;
-  background: #FF676D;
-  margin-bottom: 14px;
-}
-.card .content .img img{
-  height: 100%;
-  width: 100%;
-  border: 3px solid #ffff;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.card .content .name{
-  font-size: 20px;
-  font-weight: 500;
-}
-.card .content .job{
-  font-size: 20px;
-  color: #FF676D;
-}
-.card .content .media-icons{
-  margin-top: 10px;
-  display: flex;
-
-}
-.media-icons a{
-  text-align: center;
-  line-height: 33px;
-  height: 35px;
-  width: 35px;
-  margin: 0 4px;
-  font-size: 14px;
-  color: #FFF;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  background: #FF676D;
-  transition: all 0.3s ease;
-}
-.media-icons a:hover{
-  color: #FF676D;
-  background-color: #fff;
-  border-color: #FF676D;
-}
- .container .button{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-}
-.button label{
-  height: 15px;
-  width: 15px;
-  border-radius: 20px;
-  background: #e49292;
-  margin: 0 4px;
-  cursor: pointer;
-  transition: all 0.5s ease;
-}
-.button label.active{
-  width: 35px;
-}
-#one:checked ~ .button .one{
-  width: 35px;
-}
-#one:checked ~ .button .two{
-  width: 15px;
-}
-#two:checked ~ .button .one{
-  width: 15px;
-}
-#two:checked ~ .button .two{
-  width: 35px;
-}
-input[type="radio"]{
-  display: none;
-}
-@media (max-width: 768px) {
-  .main-card .cards .card{
-    margin: 20px 0 10px 0;
-    width: calc(100% / 2 - 10px);
-  }
-}
-@media (max-width: 600px) {
-  .main-card .cards .card{
-    width: 100%;
-  }
-}
-
-/* == End Team Dev == */
