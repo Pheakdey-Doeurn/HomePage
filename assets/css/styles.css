@@ -776,8 +776,9 @@ input[type="radio"]{
 
  /* === Organization === */
  .mxgraph{
-  display: flex;
-  max-width: 100vh;
+  justify-content: center;
+ }
+ .organization img{
   justify-content: center;
  }
  /* === End Organization === */
