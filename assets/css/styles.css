@@ -773,3 +773,11 @@ input[type="radio"]{
  }
 
  /* === Start Footer === */
+
+ /* === Organization === */
+ .mxgraph{
+  display: flex;
+  max-width: 100vh;
+  justify-content: center;
+ }
+ /* === End Organization === */
