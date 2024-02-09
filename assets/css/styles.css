@@ -17,7 +17,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", "Koulen", "Moul", "Moulpali",'Hanuman', sans-serif;
+  --body-font: "Poppins", "Koulen", "Moul", "Moulpali", 'Hanuman', sans-serif;
   --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
 
@@ -115,7 +115,8 @@ img {
   z-index: var(--z-modal);
   background-color: hsla(230, 75%, 15%, 0.1);
   -webkit-backdrop-filter: blur(24px);
-  backdrop-filter: blur(24px); /* For safari */
+  backdrop-filter: blur(24px);
+  /* For safari */
   padding: 8rem 1.5rem 0;
   opacity: 0;
   pointer-events: none;
@@ -156,10 +157,12 @@ img {
   transition: color 0.4s;
   display: flex;
 }
+
 .nav__logo img {
   width: 50px;
   border-radius: 50%;
 }
+
 .nav__logo span {
   font-size: 1.7rem;
   margin-top: 8px;
@@ -352,6 +355,7 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
 @media screen and (min-width: 576px) {
+
   .search,
   .login {
     padding-top: 10rem;
@@ -384,13 +388,16 @@ img {
     height: calc(var(--header-height) + 2rem);
     column-gap: 3rem;
   }
+
   .nav__close,
   .nav__toggle {
     display: none;
   }
+
   .nav__menu {
     margin-left: auto;
   }
+
   .nav__list {
     flex-direction: row;
     column-gap: 3rem;
@@ -406,6 +413,7 @@ img {
     margin-inline: auto;
   }
 }
+
 /* === Slide === */
 .slider {
   width: 1400px;
@@ -415,6 +423,7 @@ img {
   position: relative;
   overflow: hidden;
 }
+
 .slider .list {
   position: absolute;
   width: max-content;
@@ -424,12 +433,14 @@ img {
   display: flex;
   transition: 1s;
 }
+
 .slider .list img {
   width: 1400px;
   max-width: 110vw;
   height: 100%;
   object-fit: cover;
 }
+
 .slider .buttons {
   position: absolute;
   top: 45%;
@@ -438,6 +449,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
+
 .slider .buttons button {
   width: 50px;
   height: 50px;
@@ -448,6 +460,7 @@ img {
   font-family: monospace;
   font-weight: bold;
 }
+
 .slider .dots {
   position: absolute;
   bottom: 10px;
@@ -459,6 +472,7 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .slider .dots li {
   list-style: none;
   width: 10px;
@@ -468,14 +482,17 @@ img {
   border-radius: 20px;
   transition: 0.5s;
 }
+
 .slider .dots li.active {
   width: 30px;
 }
+
 @media screen and (max-width: 768px) {
   .slider {
     height: 400px;
   }
 }
+
 @media screen and (min-width: 448px) {
   .buttons {
     margin-top: 50px;
@@ -487,63 +504,76 @@ img {
   color: #000;
   font-weight: var(--font-medium);
 }
+
 /* About */
 .section-title {
   color: brown;
 }
+
 .about-right {
   overflow: hidden;
 }
+
 .about-right img {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .about-right:hover img {
   transform: rotate(8deg) scale(1.1);
 }
+
 /* End About */
 
 /* === Card រចនាសម្ព័ន្ធសាលា === */
 .slide-content {
   margin: 0 40px;
 }
+
 .content-section {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .content-section .card {
   flex: 1;
   margin: 20px 20px;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
 }
+
 .content-section .card img {
   width: 100%;
   height: auto;
 }
+
 .content-section .card h5 {
   margin: 15px 0px;
   font-size: 22px;
   color: #e73b69;
 }
+
 .content-section .card p {
   font-size: 16px;
   line-height: 1.5;
   padding: 0px 10px;
   margin-bottom: 10px;
 }
-.content-section .card:hover{
+
+.content-section .card:hover {
   transform: translateY(-15px);
 }
+
 @media screen and (max-width: 768px) {
   .content-section {
     flex-direction: column;
   }
-  .content-section .card{
+
+  .content-section .card {
     max-width: 1350px;
-    width: 150%; 
-    justify-content: center;   
+    width: 150%;
+    justify-content: center;
   }
 }
 
@@ -551,6 +581,7 @@ img {
   border-radius: 25px;
   background-color: #fff;
 }
+
 .image-content,
 .card-content {
   display: flex;
@@ -558,6 +589,7 @@ img {
   align-items: center;
   padding: 10px 14px;
 }
+
 .card-image {
   position: relative;
   height: 150px;
@@ -566,6 +598,7 @@ img {
   background: #fff;
   padding: 3px;
 }
+
 .card-image .card-img {
   height: 100%;
   width: 100%;
@@ -573,17 +606,19 @@ img {
   border-radius: 50%;
   border: 4px solid #fa5757;
 }
+
 /* === End Card រចនាសម្ព័ន្ធសាលា === */
 
 /* == Team Dev == */
-.dev-body{
+.dev-body {
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f2f2f2;
   position: relative;
 }
-.dev-body::before{
+
+.dev-body::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -592,33 +627,39 @@ img {
   z-index: -1;
   height: 100%;
 }
-::selection{
-  background:    #FF676D;
+
+::selection {
+  background: #FF676D;
   color: #fff;
 }
-.dev-container{
+
+.dev-container {
   max-width: 950px;
   width: 100%;
   overflow: hidden;
   padding: 80px 0;
 }
-.dev-container .main-card{
+
+.dev-container .main-card {
   display: flex;
   justify-content: space-evenly;
   width: 200%;
   transition: 1s;
 }
-#two:checked ~ .main-card{
+
+#two:checked~.main-card {
   margin-left: -100%;
 }
-.dev-container .main-card .cards{
+
+.dev-container .main-card .cards {
   width: calc(100% / 2 - 10px);
   display: flex;
   flex-wrap: wrap;
   margin: 0 20px;
   justify-content: space-between;
 }
-.main-card .cards .card{
+
+.main-card .cards .card {
   width: calc(100% / 3 - 10px);
   background: #fff;
   border-radius: 12px;
@@ -626,10 +667,12 @@ img {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.4s ease;
 }
-.main-card .cards .card:hover{
+
+.main-card .cards .card:hover {
   transform: translateY(-15px);
 }
-.cards .card .content{
+
+.cards .card .content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -637,7 +680,8 @@ img {
   align-items: center;
   text-align: center;
 }
-.cards .card .content .img{
+
+.cards .card .content .img {
   height: 130px;
   width: 130px;
   border-radius: 50%;
@@ -645,27 +689,32 @@ img {
   background: #FF676D;
   margin-bottom: 14px;
 }
-.card .content .img img{
+
+.card .content .img img {
   height: 100%;
   width: 100%;
   border: 3px solid #ffff;
   border-radius: 50%;
   object-fit: cover;
 }
-.card .content .name{
+
+.card .content .name {
   font-size: 20px;
   font-weight: 500;
 }
-.card .content .job{
+
+.card .content .job {
   font-size: 20px;
   color: #FF676D;
 }
-.card .content .media-icons{
+
+.card .content .media-icons {
   margin-top: 10px;
   display: flex;
 
 }
-.media-icons a{
+
+.media-icons a {
   text-align: center;
   line-height: 33px;
   height: 35px;
@@ -678,18 +727,21 @@ img {
   background: #FF676D;
   transition: all 0.3s ease;
 }
-.media-icons a:hover{
+
+.media-icons a:hover {
   color: #FF676D;
   background-color: #fff;
   border-color: #FF676D;
 }
- .dev-container .button{
+
+.dev-container .button {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
-.button label{
+
+.button label {
   height: 15px;
   width: 15px;
   border-radius: 20px;
@@ -698,32 +750,40 @@ img {
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.button label.active{
+
+.button label.active {
   width: 35px;
 }
-#one:checked ~ .button .one{
+
+#one:checked~.button .one {
   width: 35px;
 }
-#one:checked ~ .button .two{
+
+#one:checked~.button .two {
   width: 15px;
 }
-#two:checked ~ .button .one{
+
+#two:checked~.button .one {
   width: 15px;
 }
-#two:checked ~ .button .two{
+
+#two:checked~.button .two {
   width: 35px;
 }
-input[type="radio"]{
+
+input[type="radio"] {
   display: none;
 }
+
 @media (max-width: 768px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     margin: 20px 0 10px 0;
     width: calc(100% / 2 - 10px);
   }
 }
+
 @media (max-width: 600px) {
-  .main-card .cards .card{
+  .main-card .cards .card {
     width: 100%;
   }
 }
@@ -734,6 +794,7 @@ input[type="radio"]{
 .contact-us {
   padding: 70px 0px;
 }
+
 .section-title h2 {
   font-size: 30px;
   font-weight: normal;
@@ -746,39 +807,143 @@ input[type="radio"]{
   min-height: 188px;
   max-width: 100%;
 }
+
 .contact-us .map {
   overflow: hidden;
   border-radius: 4px;
 }
+
 .btn {
   margin-top: 10px;
 }
+
 .txtname {
   margin-bottom: 10px;
 }
+
 .txtmessage {
   margin-bottom: 10px;
 }
+
 /* === End Contact us === */
 
-.bottom-details{
+.bottom-details {
   width: 100%;
- }
-.bottom-details .bottom-text{
-  
+}
+
+.bottom-details .bottom-text {
+
   margin: auto;
   padding: 20px 40px;
-  
+
   justify-content: space-between;
- }
+}
 
- /* === Start Footer === */
+/* === Students Activiry === */
+.student-activity {
+  width: 100%;
+  margin: 0px 50px;
+  box-sizing: border-box;
+}
 
- /* === Organization === */
- .mxgraph{
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Hanuman';
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* === End Students Activiry === */
+
+/* === Start Footer === */
+
+/* === End Footer === */
+/* === Organization === */
+.organization img {
   justify-content: center;
- }
- .organization img{
-  justify-content: center;
- }
- /* === End Organization === */
+}
+
+/* === End Organization === */
