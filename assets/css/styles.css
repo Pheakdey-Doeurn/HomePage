@@ -942,7 +942,8 @@ img {
 
 /* === End Footer === */
 /* === Organization === */
-.organization img {
+.organization {
+  text-align: center;
   justify-content: center;
 }
 
