@@ -906,9 +906,9 @@ img {
 
 /* Container for image text */
 .caption-container {
-  text-align: center;
   font-size: 1.5rem;
   font-family: 'Hanuman';
+  text-align: center;
   background-color: #222;
   padding: 2px 16px;
   color: white;
